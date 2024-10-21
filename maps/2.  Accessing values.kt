@@ -21,4 +21,14 @@ fun main() {
    numberOfDrinks.isEmpty() // false
    println(numberOfDrinks.size)
 
+
+    // Checking if mapOf() is actually a collection of Pairs<Any, Any>()
+    val collectionOfPairs = mapOf(
+        Pair("Mango", 100),
+        Pair("Orange", 50),
+        Pair("Guava", 200),
+        Pair("Apple", 150)
+    )
+    println(collectionOfPairs["Guava"])
+
 }
