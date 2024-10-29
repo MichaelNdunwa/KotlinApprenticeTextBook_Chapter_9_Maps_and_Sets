@@ -25,7 +25,7 @@ fun main() {
     // does in a List.
     // For instance:
     val michaelOldProfession = michaelData.put("profession", "CEO")
-    println(michaelOldProfession) // The put() returns the old value, because the pair exist.
+    println(michaelOldProfession) // The put() returns the old value, because the pair exist, or the key - "profession" exist.
     val religion = michaelData.put("religion", "Christian")
     println(religion) // It now returns null, because the key: religion doesn't exist before.
 
@@ -33,7 +33,7 @@ fun main() {
 
     //// Removing pairs:
     println(michaelData.remove("city")) // returns null - the key does not exist.
-    println(michaelData.remove("state", "Umuahia")) // returns false - because the value doesn't match
+    println(michaelData.remove("state", "Umuahia")) // returns false - because the key "state" do exist, but the value doesn't match
     println(michaelData.remove("assert")) // returns null - the key does not exist.
     println(michaelData.remove("state", "Umuahi")) // returns true - this is because both the key and value matches.
 
